@@ -22,8 +22,12 @@ class Receta {
     if (this.puedeSerPreparada(cocina)) {
       //Item 2
       //Codigo para reucir stock en la cocina
-      //Código...
-
+      for (let i = 0; i < this.ingredientes.length; i++) {
+        cocina.reducirCantidad(
+          this.ingredientes[i][0],
+          this.ingredientes[i][i]
+        );
+      }
       //Item 3 Retornar true
       return true;
     } else {

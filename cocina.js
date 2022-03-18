@@ -16,6 +16,12 @@ class Cocina {
   get nivelExperiencia() {
     return this.experiencia;
   }
+
+  reducirCantidad(ingrediente, valor) {
+    console.log(
+      `Se reduce el stock en la cocina de: ${ingrediente} en ${valor}`
+    );
+  }
 }
 
 export { Cocina };

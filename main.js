@@ -12,5 +12,6 @@ r.addHabilidad("cocina francesa");
 
 let cocina1 = new Cocina("cocina_ej_2", 0);
 
-console.log(`Habilidades requeridas: ${r.habilidades}`);
-console.log(`Puede ser preparada la receta: ${r.puedeSerPreparada(cocina1)}`);
+// console.log(`Habilidades requeridas: ${r.habilidades}`);
+// console.log(`Puede ser preparada la receta: ${r.puedeSerPreparada(cocina1)}`);
+r.preparar(cocina1);
